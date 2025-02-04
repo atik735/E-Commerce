@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerece Product</title>
+
+    <!-- google robot fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- tailwind css and daisy ui cdn  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#56B280',
+          }
+        }
+      }
+    }
+  </script>
+
+<style>
+    .roboto {
+        font-family: "Roboto", serif;}
+    
+.poppins{
+  font-family: "Poppins", serif;}
+</style>
+
+</head>
+<body class="poppins">
+
+    <header>
+
+                  <!-- navbar start  -->
+  <div class="navbar border roboto bg-white md:px-32">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a>Discovery</a>
+            <ul class="p-2">
+              <li><a>New season</a></li>
+                <li><a>Most searched</a></li>
+                <li><a>Most Selled</a></li>
+            </ul>
+          </li>
+          <li><a>About</a></li>
+          <li><a>Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <img src="./images/logo.png" alt="">
+        <h2 class="text-primary">Candleaf</h2>
+      </div>
+
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 font-medium">
+        <li>
+            <details>
+              <summary>Discovery</summary>
+              <ul class="p-2 w-36">
+                <li><a>New season</a></li>
+                <li><a>Most searched</a></li>
+                <li><a>Most Selled</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>About</a></li>
+
+        <li><a>Contact us</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end space-x-4">
+        <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+        </a>
+    </div>
+  </div>
+
+<!-- navbar end  -->
+
+    </header>
+
+    <main class="my-16">
+    <!-- product section start  -->
+
+    <section class="w-10/12 mx-auto flex  gap-10">
+
+        <div class="product-img place-self-center">
+
+            <div class="bg-[#F7F8FA]">
+                <img src="images/product.png" alt="">
+            </div>
+            <div class="text-center my-4">
+                <p class="font-medium text-xl">All hand-made with natural soy wax, Candleaf is <br>made for your pleasure moments.</p>
+                <p class="flex gap-1 mt-6 items-center justify-center font-medium text-lg text-primary">
+                    <img width="20" height="20" src="https://img.icons8.com/emoji/48/delivery-truck.png" alt="delivery-truck"/>
+                    FREE SHIPPING</p>
+            </div>
+        </div>
+
+
+        <!-- spiced mint candleaf start  -->
+         <div>
+
+        <div>
+            <h1 class="text-2xl font-medium mb-5">Spiced Mint Candleaf®</h1>
+        </div>
+        <!-- price Quantity start -->
+        <div>
+            <div>
+            <p class="text-primary font-semibold text-2xl ">$ 9.99</p>
+            <p class="roboto text-lg mt-14">Quantity</p>
+            <p class="border border-primary p-2 w-20 space-x-4 text-center roboto text-lg"><span class="text-primary">+</span> <span>1</span><span>-</span></p>
+        </div>
+        </div>
+        <!-- price Quantity end -->
+
+        <!-- purchase start  -->
+
+        <div class="purchase">
+            <div>
+            <input type="radio" name="purchase" id="purchase" >
+            <label for="purchase">One time purchase</label></div>
+            <div>
+                <input type="radio" name="purchase" id="purchase" checked="checked">
+                <label for="purchase">Subscribe and Delivery every</label> 
+                <select name="purchase1" id="purchase1" class="border-2">
+                    <option value="weeks">4Weeks</option>
+                    <option value="weeks">4Weeks</option>
+                </select>
+            </div>
+        </div>
+
+                <!-- purchase end  -->
+
+
+    </div>
+    </section>
+
+    <!-- product section end  -->
+
+    </main>
+</body>
+</html>
