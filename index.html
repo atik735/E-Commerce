@@ -40,461 +40,239 @@
 </style>
 
 </head>
-<body class="poppins">
+<body class="poppins container mx-auto">
+  <header>
 
-    <header>
+    <!-- navbar start  -->
+    <div class="navbar relative roboto z-10 bg-white lg:px-32">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li>
+              <a>Discovery</a>
+              <ul class="p-2">
+                <li><a>New season</a></li>
+                  <li><a>Most searched</a></li>
+                  <li><a>Most Selled</a></li>
+              </ul>
+            </li>
+            <li><a>About</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
 
-    <section class="carousel w-full">
+        <div class="flex items-center gap-2">
+          <img src="./images/logo.png" alt="">
+          <h2 class="text-primary">Candleaf</h2>
+        </div>
 
-        <!-- slide 1 start  -->
-        
-        <div id="slide1" class="carousel-item relative w-full">
-                
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-medium">
+          <li>
+              <details>
+                <summary>Discovery</summary>
+                <ul class="p-2 w-36">
+                  <li><a>New season</a></li>
+                  <li><a>Most searched</a></li>
+                  <li><a>Most Selled</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>About</a></li>
 
-          <!-- bg img  -->
+          <li><a>Contact us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end space-x-4">
+          <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+          </a>
+      </div>
+    </div>
+
+<!-- navbar end  -->
+
+<section class="carousel w-full relative -top-24 ">
+
+  <!-- slide 1 start  -->
+  
+  <div id="slide1" class="carousel-item relative w-full">
+          
+
+    <!-- bg img  -->
 <div class="banner bg-[url('./images/bg-image.png')] bg-no-repeat md:bg-bottom object-contain bg-cover lg:h-[900px] w-full ">
 
-          <!-- bg- img end  -->
+    <!-- bg- img end  -->
+      
+     <!-- banner items section start -->
 
-          <!-- navbar start  -->
-  <div class="navbar roboto bg-white md:px-32">
-                  <div class="navbar-start">
-                    <div class="dropdown">
-                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                      </div>
-                      <ul
-                        tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li>
-                          <a>Discovery</a>
-                          <ul class="p-2">
-                            <li><a>New season</a></li>
-                              <li><a>Most searched</a></li>
-                              <li><a>Most Selled</a></li>
-                          </ul>
-                        </li>
-                        <li><a>About</a></li>
-                        <li><a>Contact us</a></li>
-                      </ul>
-                    </div>
-      
-                    <div class="flex items-center gap-2">
-                      <img src="./images/logo.png" alt="">
-                      <h2 class="text-primary">Candleaf</h2>
-                    </div>
-      
-                  </div>
-                  <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 font-medium">
-                      <li>
-                          <details>
-                            <summary>Discovery</summary>
-                            <ul class="p-2 w-36">
-                              <li><a>New season</a></li>
-                              <li><a>Most searched</a></li>
-                              <li><a>Most Selled</a></li>
-                            </ul>
-                          </details>
-                        </li>
-                        <li><a>About</a></li>
-      
-                      <li><a>Contact us</a></li>
-                    </ul>
-                  </div>
-                  <div class="navbar-end space-x-4">
-                      <a href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                        </svg>
-                      </a>
-                      <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                        </svg>
-                      </a>
-                  </div>
-                </div>
-      
-           <!-- navbar end  -->
-            
-           <!-- banner items section start -->
-
-   <section class="bg-[#F7F8FACC] max-md:my-8 w-[72%] md:w-1/2 md:mt-52 mx-auto bg-opacity-20 md:bg-opacity-30 md:backdrop-blur-md">
-   <div class="md:px-16 py-6 md:py-20 text-black text-center ">
-   <img class="w-10 place-self-center" src="./images/plant.png" alt="">
-   <h2 class="font-medium text-[32px] md:text-[40px]">The nature candle</h2>
-   <p class=" md:text-lg">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
-     <button class="bg-primary mt-16 py-2 px-11 roboto font-medium text-white">Discovery our collection</button>
-      </div>
+<section class="bg-[#F7F8FACC] w-[72%] mt-36 mb-16 lg:w-1/2 md:mt-52 lg:mt-72 mx-auto bg-opacity-20 md:bg-opacity-30 md:backdrop-blur-md">
+<div class="md:px-16 px-2 py-6 md:py-16 text-black text-center">
+<img class="w-10 place-self-center" src="./images/plant.png" alt="">
+<h2 class="font-medium text-2xl md:text-[40px] pt-4">The nature candle</h2>
+<p class=" md:text-lg py-4 text-sm">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
+<button class="bg-primary max-md:text-sm md:mt-16 py-2 px-4 md:px-11 roboto font-medium text-white">Discovery our collection</button>
+</div>
 </section>
 
-          <!-- banner items section  end-->
+    <!-- banner items section  end-->
 
+</div>
+
+<!-- arrow start  -->
+  <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between">
+    <a href="#slide4" class="btn btn-circle bg-primary">❮</a>
+    <a href="#slide2" class="btn btn-circle bg-primary">❯</a>
   </div>
 
-  <!-- arrow start  -->
-        <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide4" class="btn btn-circle bg-primary">❮</a>
-          <a href="#slide2" class="btn btn-circle bg-primary">❯</a>
-        </div>
-
-                <!-- arrow end  -->
+          <!-- arrow end  -->
 
 
-      </div>
+</div>
 
-        <!-- slide 1 end  -->
+  <!-- slide 1 end  -->
 
-        <!-- slide 2start  -->
-        <div id="slide2" class="carousel-item relative w-full">
-                
-            <!-- bg img  -->
-          <div class="banner bg-[url('./images/bg-image.png')] bg-no-repeat md:bg-bottom object-contain bg-cover lg:h-[900px] w-full ">
+  <!-- slide 2start  -->
+  <div id="slide2" class="carousel-item relative w-full">
+          
+      <!-- bg img  -->
+      <div class="banner bg-[url('./images/bg-image.png')] bg-no-repeat md:bg-bottom object-contain bg-cover lg:h-[900px] w-full ">
 
-            <!-- bg- img end  -->
-  
-            <!-- navbar start  -->
-    <div class="navbar roboto bg-white md:px-32">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
-                        </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                          <li>
-                            <a>Discovery</a>
-                            <ul class="p-2">
-                              <li><a>Submenu 1</a></li>
-                              <li><a>Submenu 2</a></li>
-                            </ul>
-                          </li>
-                          <li><a>About</a></li>
-                          <li><a>Contact us</a></li>
-                        </ul>
-                      </div>
-        
-                      <div class="flex items-center gap-2">
-                        <img src="./images/logo.png" alt="">
-                        <h2 class="text-primary">Candleaf</h2>
-                      </div>
-        
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1 font-medium">
-                        <li>
-                            <details>
-                              <summary>Discovery</summary>
-                              <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                              </ul>
-                            </details>
-                          </li>
-                          <li><a>About</a></li>
-        
-                        <li><a>Contact us</a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end space-x-4">
-                        <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                          </svg>
-                        </a>
-                        <a href="#">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                          </svg>
-                        </a>
-                    </div>
-                  </div>
-        
-             <!-- navbar end  -->
-              
-             <!-- banner items section start -->
-  
-     <section class="bg-[#F7F8FACC] max-md:my-8 w-[72%] md:w-1/2 md:mt-52 mx-auto bg-opacity-20 md:bg-opacity-30 md:backdrop-blur-md">
-     <div class="md:px-16 py-6 md:py-20 text-black text-center ">
-     <img class="w-10 place-self-center" src="./images/plant.png" alt="">
-     <h2 class="font-medium text-[32px] md:text-[40px]">The nature candle</h2>
-     <p class=" md:text-lg">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
-       <button class="bg-primary mt-16 py-2 px-11 roboto font-medium text-white">Discovery our collection</button>
-        </div>
-  </section>
-  
-            <!-- banner items section  end-->
-  
+        <!-- bg- img end  -->
+          
+         <!-- banner items section start -->
+
+ <section class="bg-[#F7F8FACC] w-[72%] mt-36 mb-16 lg:w-1/2 md:mt-52 lg:mt-72 mx-auto bg-opacity-20 md:bg-opacity-30 md:backdrop-blur-md">
+ <div class="md:px-16 px-2 py-6 md:py-16 text-black text-center">
+ <img class="w-10 place-self-center" src="./images/plant.png" alt="">
+ <h2 class="font-medium text-2xl md:text-[40px] pt-4">The nature candle</h2>
+ <p class=" md:text-lg py-4 text-sm">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
+   <button class="bg-primary max-md:text-sm md:mt-16 py-2 px-4 md:px-11 roboto font-medium text-white">Discovery our collection</button>
     </div>
+</section>
 
-  <!-- arrow start  -->
-        <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide1" class="btn btn-circle bg-primary">❮</a>
-          <a href="#slide3" class="btn btn-circle bg-primary">❯</a>
-        </div>
+        <!-- banner items section  end-->
 
-                <!-- arrow end  -->
+</div>
 
+<!-- arrow start  -->
+  <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between">
+    <a href="#slide1" class="btn btn-circle bg-primary">❮</a>
+    <a href="#slide3" class="btn btn-circle bg-primary">❯</a>
+  </div>
 
-      </div>
-
-        <!-- slide 2 end  -->
-
-        <!-- slide 3 start  -->
-
-        <div id="slide3" class="carousel-item relative w-full">
-                
-
-          <!-- bg img  -->
-          <div class="banner bg-[url('./images/bg-image.png')] bg-no-repeat md:bg-bottom object-contain bg-cover lg:h-[900px] w-full ">
-
-            <!-- bg- img end  -->
-  
-            <!-- navbar start  -->
-    <div class="navbar roboto bg-white md:px-32">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
-                        </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                          <li>
-                            <a>Discovery</a>
-                            <ul class="p-2">
-                              <li><a>Submenu 1</a></li>
-                              <li><a>Submenu 2</a></li>
-                            </ul>
-                          </li>
-                          <li><a>About</a></li>
-                          <li><a>Contact us</a></li>
-                        </ul>
-                      </div>
-        
-                      <div class="flex items-center gap-2">
-                        <img src="./images/logo.png" alt="">
-                        <h2 class="text-primary">Candleaf</h2>
-                      </div>
-        
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1 font-medium">
-                        <li>
-                            <details>
-                              <summary>Discovery</summary>
-                              <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                              </ul>
-                            </details>
-                          </li>
-                          <li><a>About</a></li>
-        
-                        <li><a>Contact us</a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end space-x-4">
-                        <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                          </svg>
-                        </a>
-                        <a href="#">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                          </svg>
-                        </a>
-                    </div>
-                  </div>
-        
-             <!-- navbar end  -->
-              
-             <!-- banner items section start -->
-  
-     <section class="bg-[#F7F8FACC] max-md:my-8 w-[72%] md:w-1/2 md:mt-52 mx-auto bg-opacity-20 md:bg-opacity-30 md:backdrop-blur-md">
-     <div class="md:px-16 py-6 md:py-20 text-black text-center ">
-     <img class="w-10 place-self-center" src="./images/plant.png" alt="">
-     <h2 class="font-medium text-[32px] md:text-[40px]">The nature candle</h2>
-     <p class=" md:text-lg">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
-       <button class="bg-primary mt-16 py-2 px-11 roboto font-medium text-white">Discovery our collection</button>
-        </div>
-  </section>
-  
-            <!-- banner items section  end-->
-  
-    </div>
-
-  <!-- arrow start  -->
-        <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide2" class="btn btn-circle bg-primary">❮</a>
-          <a href="#slide4" class="btn btn-circle bg-primary">❯</a>
-        </div>
-
-                <!-- arrow end  -->
+          <!-- arrow end  -->
 
 
-      </div>
+  </div>
+  <!-- slide 2 end  -->
 
-        <!-- slide 3 end  -->
+          <!-- slide 3 start  -->
 
-        <!-- slide 4 start -->
-
-        <div id="slide4" class="carousel-item relative w-full">
-                
+          <div id="slide3" class="carousel-item relative w-full">
+          
 
             <!-- bg img  -->
+            <div class="banner bg-[url('./images/bg-image.png')] bg-no-repeat md:bg-bottom object-contain bg-cover lg:h-[900px] w-full ">
 
-          <!-- bg img  -->
-          <div class="banner bg-[url('./images/bg-image.png')] bg-no-repeat md:bg-bottom object-contain bg-cover lg:h-[900px] w-full ">
-
-            <!-- bg- img end  -->
-  
-            <!-- navbar start  -->
-    <div class="navbar roboto bg-white md:px-32">
-                    <div class="navbar-start">
-                      <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
-                        </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                          <li>
-                            <a>Discovery</a>
-                            <ul class="p-2">
-                              <li><a>Submenu 1</a></li>
-                              <li><a>Submenu 2</a></li>
-                            </ul>
-                          </li>
-                          <li><a>About</a></li>
-                          <li><a>Contact us</a></li>
-                        </ul>
-                      </div>
-        
-                      <div class="flex items-center gap-2">
-                        <img src="./images/logo.png" alt="">
-                        <h2 class="text-primary">Candleaf</h2>
-                      </div>
-        
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1 font-medium">
-                        <li>
-                            <details>
-                              <summary>Discovery</summary>
-                              <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                              </ul>
-                            </details>
-                          </li>
-                          <li><a>About</a></li>
-        
-                        <li><a>Contact us</a></li>
-                      </ul>
-                    </div>
-                    <div class="navbar-end space-x-4">
-                        <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                          </svg>
-                        </a>
-                        <a href="#">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                          </svg>
-                        </a>
-                    </div>
-                  </div>
-        
-             <!-- navbar end  -->
-              
-             <!-- banner items section start -->
-  
-     <section class="bg-[#F7F8FACC] max-md:my-8 w-[72%] md:w-1/2 md:mt-52 mx-auto bg-opacity-20 md:bg-opacity-30 md:backdrop-blur-md">
-     <div class="md:px-16 py-6 md:py-20 text-black text-center ">
-     <img class="w-10 place-self-center" src="./images/plant.png" alt="">
-     <h2 class="font-medium text-[32px] md:text-[40px]">The nature candle</h2>
-     <p class=" md:text-lg">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
-       <button class="bg-primary mt-16 py-2 px-11 roboto font-medium text-white">Discovery our collection</button>
-        </div>
-  </section>
-  
-            <!-- banner items section  end-->
-  
-    </div>
-  
+              <!-- bg- img end  -->
+                
+               <!-- banner items section start -->
+    
+       <section class="bg-[#F7F8FACC] w-[72%] mt-36 mb-16 lg:w-1/2 md:mt-52 lg:mt-72 mx-auto bg-opacity-20 md:bg-opacity-30 md:backdrop-blur-md">
+       <div class="md:px-16 px-2 py-6 md:py-16 text-black text-center">
+       <img class="w-10 place-self-center" src="./images/plant.png" alt="">
+       <h2 class="font-medium text-2xl md:text-[40px] pt-4">The nature candle</h2>
+       <p class=" md:text-lg py-4 text-sm">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
+         <button class="bg-primary max-md:text-sm md:mt-16 py-2 px-4 md:px-11 roboto font-medium text-white">Discovery our collection</button>
+          </div>
+    </section>
+    
+              <!-- banner items section  end-->
+    
+      </div>
     <!-- arrow start  -->
           <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide3" class="btn btn-circle bg-primary">❮</a>
-            <a href="#slide1" class="btn btn-circle bg-primary">❯</a>
+            <a href="#slide2" class="btn btn-circle bg-primary">❮</a>
+            <a href="#slide4" class="btn btn-circle bg-primary">❯</a>
           </div>
-
+  
                   <!-- arrow end  -->
-
-
+  
+  
         </div>
-
-        <!-- slide 4 end  -->
-
-        </section>
+  
+          <!-- slide 3 end  -->
 
 
+                  <!-- slide 4 start -->
 
-        
+  <div id="slide4" class="carousel-item relative w-full">
+          
 
-          <!-- background image and not slider  -->
-          <!-- <div class="banner bg-[url('./images/bg-image.png')] bg-no-repeat bg-bottom object-contain bg-cover h-[830px] ">
-          </div> -->
-          <!-- background image and not slider  -->
-    </header>
+    <!-- bg img  -->
+
+  <!-- bg img  -->
+  <div class="banner bg-[url('./images/bg-image.png')] bg-no-repeat md:bg-bottom object-contain bg-cover lg:h-[900px] w-full ">
+
+    <!-- bg- img end  -->
+      
+     <!-- banner items section start -->
+
+<section class="bg-[#F7F8FACC] w-[72%] mt-36 mb-16 lg:w-1/2 md:mt-52 lg:mt-72 mx-auto bg-opacity-20 md:bg-opacity-30 md:backdrop-blur-md">
+<div class="md:px-16 px-2 py-6 md:py-16 text-black text-center">
+<img class="w-10 place-self-center" src="./images/plant.png" alt="">
+<h2 class="font-medium text-2xl md:text-[40px] pt-4">The nature candle</h2>
+<p class=" md:text-lg py-4 text-sm">All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
+<button class="bg-primary max-md:text-sm md:mt-16 py-2 px-4 md:px-11 roboto font-medium text-white">Discovery our collection</button>
+</div>
+</section>
+
+    <!-- banner items section  end-->
+
+</div>
+
+
+<!-- arrow start  -->
+  <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between">
+    <a href="#slide3" class="btn btn-circle bg-primary">❮</a>
+    <a href="#slide1" class="btn btn-circle bg-primary">❯</a>
+  </div>
+
+          <!-- arrow end  -->
+
+
+</div>
+
+<!-- slide 4 end  -->
+</section>
+
+
+</header>
 
 
     <main class="my-24">
@@ -512,13 +290,13 @@
 
         <!-- product cards start  -->
 
-        <div class="products-cards grid-cols-2 grid md:grid-cols-4 gap-8">
+        <div class="products-cards grid-cols-2 grid lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
           <!-- card 1 start  -->
 
           <div class="card1 drop-shadow-xl">
             <figure class="bg-[#F7F8FA]">
-            <img src="./images/card1.png" alt="">
+            <img class="place-self-center" src="./images/card1.png" alt="">
           </figure>
           <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
             <h3 class="font-medium max-md:text-xs text-[#1D293F]">Spiced Mint</h3>
@@ -532,7 +310,7 @@
 
           <div class="card2 drop-shadow-xl">
             <figure class="bg-[#F7F8FA]">
-            <img src="./images/card2.png" alt="">
+            <img class="place-self-center" src="./images/card2.png" alt="">
           </figure>
           <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
             <h3 class="font-medium max-md:text-xs text-[#1D293F]">Sweet Straweberry</h3>
@@ -546,7 +324,7 @@
 
           <div class="card3 drop-shadow-xl">
             <figure class="bg-[#F7F8FA]">
-            <img src="./images/card3.png" alt="">
+            <img class="place-self-center" src="./images/card3.png" alt="">
           </figure>
           <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
             <h3 class="font-medium max-md:text-xs text-[#1D293F]">Cool Blueberries</h3>
@@ -559,7 +337,7 @@
 
           <div class="card4 drop-shadow-xl">
             <figure class="bg-[#F7F8FA]">
-            <img src="./images/card4.png" alt="">
+            <img class="place-self-center" src="./images/card4.png" alt="">
           </figure>
           <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
             <h3 class="font-medium max-md:text-xs text-[#1D293F]">Juicy Lemon</h3>
@@ -573,7 +351,7 @@
 
            <div class="card5 drop-shadow-xl">
             <figure class="bg-[#F7F8FA]">
-            <img src="./images/card5.png" alt="">
+            <img class="place-self-center" src="./images/card5.png" alt="">
           </figure>
           <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
             <h3 class="font-medium max-md:text-xs text-[#1D293F]">Product Name</h3>
@@ -587,7 +365,7 @@
 
           <div class="card6 drop-shadow-xl">
             <figure class="bg-[#F7F8FA]">
-            <img src="./images/card6.png" alt="">
+            <img class="place-self-center" src="./images/card6.png" alt="">
           </figure>
           <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
             <h3 class="font-medium max-md:text-xs text-[#1D293F]">Fragrant Cinnamon</h3>
@@ -601,7 +379,7 @@
 
           <div class="card7 drop-shadow-xl">
             <figure class="bg-[#F7F8FA]">
-            <img src="./images/card7.png" alt="">
+            <img class="place-self-center" src="./images/card7.png" alt="">
           </figure>
           <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
             <h3 class="font-medium max-md:text-xs text-[#1D293F]">Summer Cherries</h3>
@@ -615,7 +393,7 @@
 
           <div class="card8 drop-shadow-xl">
             <figure class="bg-[#F7F8FA]">
-            <img src="./images/card8.png" alt="">
+            <img class="place-self-center" src="./images/card8.png" alt="">
           </figure>
           <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
             <h3 class="font-medium max-md:text-xs text-[#1D293F]">Clean Lavander</h3>
@@ -636,9 +414,9 @@
 
       <section class="clean-container mt-20 bg-[#F7F8FA]">
 
-        <div class="clean-content w-10/12 mx-auto py-20 flex justify-around items-center max-md:flex-col">
+        <div class="clean-content w-10/12 mx-auto py-20 flex justify-around items-center max-lg:flex-col-reverse">
           
-          <div class="clean-title-desc md:w-1/2">
+          <div class="clean-title-desc lg:w-1/2">
             
             <div class="title space-y-2 mb-14">
             <h1 class="font-medium text-[40px] leading-tight text-[#1D252C]">Clean and <br>fragrant say wax</h1>
@@ -683,7 +461,7 @@
 
                 <span class="font-medium">Long burning:</span> No more waste. Created for last long. 
               </p>
-              <div class="md:pt-16 pt-5">
+              <div class="lg:pt-16 pt-5">
             <button class="bg-primary  text-white roboto font-medium text-xl px-10 py-1 rounded-lg">Learn More</button></div>
           </div>
         </div>
@@ -711,7 +489,7 @@
         
 
 
-        <div class="client-card-container grid grid-cols-1 md:grid-cols-3  gap-16 max-md:flex-col my-11">
+        <div class="client-card-container grid grid-cols-1 md:grid-cols-3 gap-3 xl:gap-16 my-11">
 
           <!-- client card 1 start  -->
 
@@ -816,7 +594,7 @@
 
                     <!-- popular cards start  -->
 
-        <div class="products-cards mt-12 grid-cols-2 grid md:grid-cols-4 gap-8">
+        <div class="products-cards mt-12 grid-cols-2 grid lg:grid-cols-3 xl:grid-cols-4 gap-8 ">
 
           <!-- card 1 start  -->
 
@@ -824,8 +602,8 @@
             <figure class="bg-[#F7F8FA]">
             <img src="./images/card1.png" alt="">
           </figure>
-          <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
-            <h3 class="font-medium max-md:text-xs text-[#1D293F]">Spiced Mint</h3>
+          <div class="bg-white px-5 max-sm:px-2 py-4 space-y-2">
+            <h3 class="font-medium max-sm:text-xs text-[#1D293F]">Spiced Mint</h3>
             <p class="text-primary font-medium roboto text-xl text-right">9.99$</p>
           </div>
           </div>
@@ -838,8 +616,8 @@
             <figure class="bg-[#F7F8FA]">
             <img src="./images/card2.png" alt="">
           </figure>
-          <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
-            <h3 class="font-medium max-md:text-xs text-[#1D293F]">Sweet Straweberry</h3>
+          <div class="bg-white px-5 max-sm:px-2 py-4 space-y-2">
+            <h3 class="font-medium max-sm:text-xs text-[#1D293F]">Sweet Straweberry</h3>
             <p class="text-primary font-medium roboto text-xl text-right">9.99$</p>
           </div>
           </div>
@@ -852,8 +630,8 @@
             <figure class="bg-[#F7F8FA]">
             <img src="./images/card3.png" alt="">
           </figure>
-          <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
-            <h3 class="font-medium max-md:text-xs text-[#1D293F]">Cool Blueberries</h3>
+          <div class="bg-white px-5 max-sm:px-2 py-4 space-y-2">
+            <h3 class="font-medium max-sm:text-xs text-[#1D293F]">Cool Blueberries</h3>
             <p class="text-primary font-medium roboto text-xl text-right">9.99$</p>
           </div>
           </div>
@@ -865,8 +643,8 @@
             <figure class="bg-[#F7F8FA]">
             <img src="./images/card4.png" alt="">
           </figure>
-          <div class="bg-white px-5 max-md:px-1 py-4 space-y-2">
-            <h3 class="font-medium max-md:text-xs text-[#1D293F]">Juicy Lemon</h3>
+          <div class="bg-white px-5 max-sm:px-2 py-4 space-y-2">
+            <h3 class="font-medium max-sm:text-xs text-[#1D293F]">Juicy Lemon</h3>
             <p class="text-primary font-medium roboto text-xl text-right">9.99$</p>
           </div>
           </div>
@@ -896,7 +674,7 @@
 
         <!-- footer-nav section start  -->
 
-        <div class="nav-section flex flex-wrap gap-9 md:gap-32 pt-12">
+        <div class="nav-section flex max-md:flex-wrap gap-9 lg:gap-32 pt-12">
 
         <div>
           
