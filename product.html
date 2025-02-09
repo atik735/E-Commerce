@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +45,7 @@
     <header>
 
                   <!-- navbar start  -->
-  <div class="navbar border roboto bg-white md:px-32">
+  <div class="navbar border roboto bg-white lg:px-20">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -122,59 +122,81 @@
     <main class="my-16">
     <!-- product section start  -->
 
-    <section class="w-10/12 mx-auto flex  gap-10">
+    <section class="w-10/12 mx-auto flex flex-col xl:flex-row justify-between  gap-10">
+        
+      <div class="product-img place-self-center xl:w-1/2">
 
-        <div class="product-img place-self-center">
+          <div class="bg-[#F7F8FA]">
+              <img class="place-self-center" src="images/product.png" alt="">
+          </div>
+          <div class="text-center my-4">
+              <p class="font-medium text-xl">All hand-made with natural soy wax, Candleaf is <br class="max-sm:hidden visible">made for your pleasure moments.</p>
+              <p class="flex gap-1 mt-6 items-center justify-center font-medium text-lg text-primary">
+                  <img width="20" height="20" src="https://img.icons8.com/emoji/48/delivery-truck.png" alt="delivery-truck"/>
+                  FREE SHIPPING</p>
+          </div>
+      </div>
 
-            <div class="bg-[#F7F8FA]">
-                <img src="images/product.png" alt="">
-            </div>
-            <div class="text-center my-4">
-                <p class="font-medium text-xl">All hand-made with natural soy wax, Candleaf is <br>made for your pleasure moments.</p>
-                <p class="flex gap-1 mt-6 items-center justify-center font-medium text-lg text-primary">
-                    <img width="20" height="20" src="https://img.icons8.com/emoji/48/delivery-truck.png" alt="delivery-truck"/>
-                    FREE SHIPPING</p>
-            </div>
-        </div>
+      <div class="spiced xl:w-1/2 mt-3">
 
+        <h1 class="sm:text-[28px] text-2xl font-medium mb-5">Spiced Mint Candleaf®</h1>
 
-        <!-- spiced mint candleaf start  -->
-         <div>
+        <div class="subscribe-quantity flex justify-between  max-md:flex-col ">
 
-        <div>
-            <h1 class="text-2xl font-medium mb-5">Spiced Mint Candleaf®</h1>
-        </div>
-        <!-- price Quantity start -->
-        <div>
-            <div>
+        <!-- quantity  -->
+
+        <div class="quantity xl:space-y-14 max-xl:flex max-xl:items-center max-xl:gap-10 max-md:mb-5 ">
+
+          <div>
             <p class="text-primary font-semibold text-2xl ">$ 9.99</p>
-            <p class="roboto text-lg mt-14">Quantity</p>
-            <p class="border border-primary p-2 w-20 space-x-4 text-center roboto text-lg"><span class="text-primary">+</span> <span>1</span><span>-</span></p>
-        </div>
-        </div>
-        <!-- price Quantity end -->
+          </div>
+                  
+       <div class="space-y-2">
+        <p class="roboto text-lg ">Quantity</p>
+        <p class="border border-primary px-2 w-20 space-x-4 text-center roboto text-lg"><span class="text-primary">+</span> <span>1</span><span>-</span></p>
+      </div>
 
-        <!-- purchase start  -->
+        </div>
 
-        <div class="purchase">
-            <div>
+         <!-- quantity  -->
+
+        <!-- purchase  -->
+
+        <div class="subscribe space-y-5 md:space-y-10">
+
+          
+          <div class="space-x-3">
             <input type="radio" name="purchase" id="purchase" >
             <label for="purchase">One time purchase</label></div>
+
+            <div class="border-2 rounded-lg p-4 space-x-3 space-y-2">
+              <input type="radio" name="purchase" id="purchase2" checked="checked">
+              <label for="purchase2" class="roboto">Subscribe and Delivery every</label> 
+              <select name="purchase1" id="purchase1" class="border-2">
+                  <option value="weeks" class="roboto">4 Weeks</option>
+                  <option value="weeks" class="roboto">4 Weeks</option>
+              </select>
+              <p class="text-[#656565]">Subscribe now and get the 10% of discount <br class="max-sm:hidden visible">on every recurring order.  The discount will <br class="max-sm:hidden visible">be applied at checkout. <a href="#" class="text-primary">See details</a></p>
+            </div>
+          
             <div>
-                <input type="radio" name="purchase" id="purchase" checked="checked">
-                <label for="purchase">Subscribe and Delivery every</label> 
-                <select name="purchase1" id="purchase1" class="border-2">
-                    <option value="weeks">4Weeks</option>
-                    <option value="weeks">4Weeks</option>
-                </select>
+              <button class="bg-primary max-md:text-sm md:mt-16 py-2 w-full roboto font-medium text-white flex gap-3 justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+              + Add to cart</button>
             </div>
         </div>
 
-                <!-- purchase end  -->
+
+        <!-- purchase  -->
+      </div>
+
+      </div>
 
 
-    </div>
     </section>
+
 
     <!-- product section end  -->
 
